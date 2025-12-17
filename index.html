@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Royal Bags</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,29 +11,30 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" href="./images/logo.jfif" type="image/x-icon">
+<script src="script.js"></script>
 </head>
 <body>
     
-    <header>
-        <section class="header"><p class="abril-fatface-regular">ROYAL BAGS</p> <hr>
-            <nav class="nav">
-                <ul type = "none" class="ul abril-fatface-regular-thin">
-                    <li><a href="" class="a">Home</a></li>
-                    <li><a href="" class="a">Our Brand</a></li>
-                    <li><a href="" class="a">Gallery</a></li>
-                    <li><a href="" class="a">Reviews</a></li>
-                    <li><a href="" class="a">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="humberger">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </section>
+    <header class="header">
+        <h3 class="abril-fatface-regular rvw-author"><img src="./images/logo.jfif" alt="" class="rvwimglogo"> ROYAL BAGS</h3>
+        <nav class="nav" id="na">
+            <ul type = "none" class="ul abril-fatface-regular-thin">
+                <li><a href="home" class="a">Home</a></li>
+                <li><a href="brand" class="a">Our Brand</a></li>
+                <li><a href="gallery" class="a">Gallery</a></li>
+                <li><a href="reviews" class="a">Reviews</a></li>
+                <li><a href="contact" class="a">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="humberger">
+            <i class="fa-solid fa-bars " id="bars"></i>
+        </div>
     </header>
     <main>
-        <section class="sec1">
-            <section class="home">
+        <section class="sec1" >
+            <section class="home" id="home">
                 <div class="hm0">
                     <h1 class="abril-fatface-regular title">Royal Bags</h1>
                     <div class="hm1">
@@ -47,7 +48,7 @@
                 <!--<div class="img1"> <img src="./images/4cc0f2d795d8cccc598e55a5719e801d.jpg" alt="" ></div> -->
             </section>
         </section>
-        <section class="brand">
+        <section class="brand" id="brand">
             <div class="brd1">
                 <h5 class="abril-fatface-regular-thin">About Our Brand</h5>
                 <p>We Care About Your Choices</p>
@@ -59,7 +60,7 @@
             </div>
             <div class="img1"><img src="./images/img5.jpg" alt="" class="img1-g"></div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <h5 class="abril-fatface-regular-thin h-gallery ">Our Gallery</h5>
             <div class="bags">
                 <div class="bag">
@@ -101,7 +102,7 @@
             </div>
 
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <h5 class="abril-fatface-regular-thin reviews-h5" >Customer Reviews</h5>
             <p class="reviews-p">What our customers have got to say, means alot to us. Your opinion, puts us in a better place.</p>
             <section class="rvws">
@@ -143,8 +144,11 @@
                 </div>
             </section>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h5 class="abril-fatface-regular-thin">Contact Us</h5>
+            <aside>
+
+            </aside>
             <section class="form">
                 <form action="" class="frm">
                     <h1>Talk to us.</h1>
@@ -171,5 +175,6 @@
         <div>This is the footer</div>
         <div>This is the footer</div>
     </footer>
+    
 </body>
 </html>
