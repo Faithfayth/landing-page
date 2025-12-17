@@ -1,7 +1,11 @@
-let menu = document.querySelector('#bars');
-let navbar = document.querySelector('.header .nav');
+const menu = document.querySelector("#bars");
+const navbar = document.querySelector(".nav");
 
-menu.onclick = () =>{
-    menu.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
+menu.onclick = () => {
+    navbar.classList.toggle("active");
+    if (menu.classList.contains("fa-bars")) {
+        menu.classList.replace("fa-bars", "fa-times");
+    }else {
+        menu.classList.replace("fa-times", "fa-bars");
+    }
 };
