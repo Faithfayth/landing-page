@@ -52,6 +52,7 @@ header{
     background-color: #F5EFEB;
     padding: 1.5vh;
     margin-top: 1vh;
+    box-shadow:#5E3023 1px 2px 3px ;
     /*padding-top: 5em;*/  
 }
 .rvwimglogo{
@@ -278,7 +279,7 @@ img{
     margin-bottom: 40px;
 }
 .rvw{
-    background-color: #f8e5ce;
+    background-color: #f8ecdd;
     padding: 10px;
     border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
     box-shadow: #5E3023 2px 4px 6px;
@@ -297,19 +298,35 @@ img{
     margin: 15px;
 }
 .contact{
-    background-image: linear-gradient(0, 0, 0, 0.5), rgba(247, 231, 198, 0.986) url("./images/img6.jpeg") no-repeat;
-    padding: 40px;
+    background-image: url("./images/img18.webp") ;
+    background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
+}
+.contact div{
+    max-width: 50%;
+}
+div h5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .frm{
-    max-width: 400px;
-    margin: 50px auto;
-    background-color: #f8e5ce;
+    min-width: 30%;
+    /*margin: 100%;*/
+    /*background-color: #f8e5ce;*/
     padding: 25px;
     border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
     box-shadow: #5E3023 2px 4px 6px;
     padding-right: 50px;
     padding-bottom: 50px;
+    backdrop-filter: blur(5px);
 }
 .frm h1{
     text-align: center;
@@ -396,11 +413,16 @@ img{
     }
 }
     
-/*@media (max-width:480px) {
-    .nav{
-        display: none;
+@media (max-width:480px) {
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
     }
-    .humberger{
-        display: block;
+    .contact div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 250px;
+        margin-bottom: 15px;
     }
-}*/
+}
