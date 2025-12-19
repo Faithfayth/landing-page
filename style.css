@@ -3,7 +3,7 @@
     margin-top: 0;
     margin-bottom: 0;
 }
-html{ scroll-timeline: --scroll;}
+
 /*body{
     padding: 1.5%;
     }*/
@@ -38,6 +38,9 @@ html{ scroll-timeline: --scroll;}
     background-repeat: no-repeat;
     background-size: cover;
     /*padding-bottom: 200px;*/
+}
+section{
+    animation:slideIn 1.5s ease-in-out;
 }
 
 header{
@@ -224,8 +227,8 @@ img{
     min-height: 700px;
 }
 .bag {
-    width: 20px;
-    height: 40px;
+    width: 3em;
+    height: 20em;
     background-color: #F5EFEB;
     margin-bottom: auto;
     border-width: 5px;
@@ -309,6 +312,10 @@ img{
     padding-right: 10vw;
     
 }
+.fa-star{
+    color: #5E3023;
+    margin-bottom: 5px;
+}
 .contact div{
     max-width: 50%;
 }
@@ -353,6 +360,30 @@ div h5{
 .footer{
     background-color:#5E3023;
     color: #F5EFEB;
+    display: flex;
+    justify-content: space-between;
+}
+.footer aside{
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+    
+}
+.footer p{
+    margin-top: 10px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    color: #F5EFEB;
+    margin-left: 0;
+}
+.socials a{
+    text-decoration: none;
+    color: #F5EFEB;
 }
 
 @keyframes slideIn {
@@ -380,7 +411,7 @@ div h5{
     
 }
 
-@media (max-width:768px) {
+@media (max-width:855px) {
     .nav{
         position: absolute;
         padding: 1rem;
@@ -390,7 +421,7 @@ div h5{
         /*background-color: #F5EFEB;*/
         height: 40vh;
         width: 30vw;
-        top: -500%;
+        top: -1000%;
         right: 20px;
         box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
@@ -410,6 +441,25 @@ div h5{
     }
     .humberger{
         display: block;
+    }
+}
+@media (max-width:680px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact div{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 400px;
+        margin-bottom: 15px;
+    }
+    .contact frm{
+        min-width: 100%;
+        display: block;
+        padding: 0;
+
     }
 }
     
